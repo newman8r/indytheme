@@ -1,0 +1,181 @@
+/*
+Theme Name: The Indy V1
+Theme URI: http://theindy.us
+Author: Steve Newman
+Author URI: http://www.theindy.us/
+Description: The main theme for the indy newspaper
+Version: 1.0
+License: Private
+License URI: https://www.theundy.us
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: theindy
+
+*/
+
+
+.main{
+  float:left;
+}
+
+.front-title{
+  font-size:3.5rem;
+}
+
+
+.tagline{
+  font-style: italic;
+font-family: arial;
+font-size: .8rem;
+color: #4a5157;
+}
+
+.title{
+
+}
+
+.right{
+  text-align: right;
+}
+
+.pubdate{
+  font-size: .8rem;
+font-style: italic;
+color: #6b6b6b;
+}
+
+.byline{
+  float:right;
+}
+
+.post img{
+  width: 100%;
+height: auto;
+filter: grayscale(100%);
+}
+
+.post-single img{
+  filter: grayscale(100%);
+}
+
+.post p{
+  font-size:.9rem;
+}
+
+.post-single{
+  margin-top:25px;
+}
+.post-single p{
+  font-size: 1.2rem;
+font-family: Serif;
+line-height: 2.2rem;
+}
+
+.category-item{
+  border-bottom-style: dotted;
+border-bottom-width: 1px;
+margin-bottom: 50px;
+border-bottom-color: #7c7c7c;
+}
+
+.post-category a{
+  color: blue;
+font-weight: bold;
+}
+
+.post-single .title{
+  border-bottom-style: solid;
+  border-bottom-color: rgb(194, 194, 194);
+  border-bottom-width: 1px;
+  margin-bottom:10px;
+}
+
+.nav-bottom{
+  margin-top:150px;
+  margin-bottom:50px;
+}
+
+.nav-black{
+  background-color: black !important;
+}
+
+.topline{
+  width: 100%;
+  height: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(234, 234, 234);
+  margin-top: 34px;
+  border-bottom-width: 5px;
+}
+
+.top-icon{
+  width:16px;
+}
+
+.head-info{
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+}
+
+
+.cats{
+  margin-top: 20px;
+}
+
+.c1{
+  min-width:320px;
+}
+
+.c2{
+  min-width:369px
+}
+
+.indy{font-family: "EnglishTowne"}
+.headline{
+  font-family: "Crimson"
+}
+
+
+
+@font-face {
+    font-family: EnglishTowne;
+    src: url('/wp-content/themes/indy/fonts/EnglishTowne.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Crimson;
+    src: url('/wp-content/themes/indy/fonts/Crimson-Semibold.otf');
+    font-weight: normal;
+}
+
+.post{
+  margin-bottom:25px;
+  border-bottom-style: dotted;
+border-bottom-width: 1px;
+border-bottom-color: #c4c4c4;
+}
+
+a{
+  color: rgb(0, 0, 0)
+}
+
+a:hover{
+  text-decoration: none;
+  color: rgb(52, 37, 91)
+}
+
+.r-border{
+  border-right-style: dotted;
+border-right-width: 1px;
+border-right-color: #c4c4c4;
+}
+@font-face {
+    font-family: Beckett;
+    src: url('/wp-content/themes/indy/fonts/Beckett-Kanzlei.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Cimbrian;
+    src: url('/wp-content/themes/indy/fonts/Cimbrian.ttf');
+    font-weight: normal;
+}
