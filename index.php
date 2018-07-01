@@ -86,7 +86,7 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
 
 
 
-<div class="col-3">
+<div class="col-3 c3">
 
           <?php $query = new WP_Query( 'cat=3,4,5,6,8,9,10' ); ?>
      <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -98,7 +98,7 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
 
 
       <div class="entry">
-      	<?php the_content(); ?>
+      	<?php the_excerpt(); ?>
       </div>
 
       <p class="postmetadata"><?php esc_html_e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>

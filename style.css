@@ -129,6 +129,10 @@ font-weight: bold;
   min-width:369px
 }
 
+.c3{
+  min-width: 255px;
+}
+
 .indy{font-family: "EnglishTowne"}
 .headline{
   font-family: "Crimson"
