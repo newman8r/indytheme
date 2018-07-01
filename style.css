@@ -138,13 +138,13 @@ font-weight: bold;
 
 @font-face {
     font-family: EnglishTowne;
-    src: url('/wp-content/themes/indy/fonts/EnglishTowne.ttf');
+    src: url('./fonts/EnglishTowne.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: Crimson;
-    src: url('/wp-content/themes/indy/fonts/Crimson-Semibold.otf');
+    src: url('./fonts/Crimson-Semibold.otf');
     font-weight: normal;
 }
 

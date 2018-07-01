@@ -1,12 +1,11 @@
 <?php
 get_header();
  ?>
-
 <div class="container">
 <div class="row">
 
 <div class="col" align="center">
-  <h1 class="indy front-title">The Indy</h1>
+  <h1 class="indy front-title"><?php echo(get_bloginfo()) ?></h1>
 </div>
 </div>
 
@@ -19,11 +18,11 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
   </div>
 
 <div class="col-6" align="center">
-<span class="tagline">Your Uncle Phil of Grayscale News</span>
+<span class="tagline"><?php echo(get_bloginfo('description')) ?></span>
 </div>
 
 <div class="col-3 right">
-<img class="top-icon" src="/wp-content/themes/indy/media/rss.png" />
+<a href="/feed"><img class="top-icon" src="<?php echo(get_theme_file_uri()) ?>/media/rss.png" /></a>
 </div>
 
 </div>
@@ -39,8 +38,7 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
   <!-- Display the Title as a link to the Post's permalink. -->
   <h2 class="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-  <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-  <small><?php the_time( 'F jS, Y' ); ?> by <?php the_author_posts_link(); ?></small>
+
 
   <div class="entry">
   <?php the_excerpt(); ?>
@@ -66,8 +64,6 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
    <!-- Display the Title as a link to the Post's permalink. -->
    <h2 class="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-   <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-   <small><?php the_time( 'F jS, Y' ); ?> by <?php the_author_posts_link(); ?></small>
 
     <div class="entry">
     	<?php the_content(); ?>
@@ -97,8 +93,6 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
      <!-- Display the Title as a link to the Post's permalink. -->
      <h2 class="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-     <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-     <small><?php the_time( 'F jS, Y' ); ?> by <?php the_author_posts_link(); ?></small>
 
       <div class="entry">
       	<?php the_content(); ?>
