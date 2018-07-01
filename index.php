@@ -47,7 +47,6 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
   <?php the_excerpt(); ?>
   </div>
 
-  <p class="postmetadata"><?php esc_html_e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
   </div> <!-- closes the first div box -->
 
   <?php endwhile;
@@ -72,8 +71,7 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
     	<?php the_excerpt(); ?>
     </div>
 
-    <p class="postmetadata"><?php esc_html_e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-   </div> <!-- closes the first div box -->
+   </div>
 
    <?php endwhile;
    wp_reset_postdata();
@@ -92,17 +90,16 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
      <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
      <div class="post">
-
-     <!-- Display the Title as a link to the Post's permalink. -->
+       <span class="category-tout">
+         <?php the_category( ', ' ); ?>
+       </span>
      <h2 class="headline"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 
       <div class="entry">
       	<?php the_excerpt(); ?>
       </div>
-
-      <p class="postmetadata"><?php esc_html_e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-     </div> <!-- closes the first div box -->
+     </div>
 
      <?php endwhile;
      wp_reset_postdata();
