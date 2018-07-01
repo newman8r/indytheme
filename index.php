@@ -66,7 +66,7 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
 
 
     <div class="entry">
-    	<?php the_content(); ?>
+    	<?php the_excerpt(); ?>
     </div>
 
     <p class="postmetadata"><?php esc_html_e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>

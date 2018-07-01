@@ -1,14 +1,14 @@
 <!doctype html>
 
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="utf-8">
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-  <title><?php echo(get_bloginfo()) ?></title>
+  <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
   <meta name="description" content="The Indy">
   <meta name="author" content="TheIndy">
+  <?php wp_enqueue_script( 'wp_enqueue_style' ); ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<link rel="stylesheet" href="/wp-content/themes/indy/style.css" />
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
