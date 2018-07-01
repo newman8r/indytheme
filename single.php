@@ -31,6 +31,9 @@ while ( have_posts() ) : the_post();
 <?php
 endwhile;
 ?>
+<div id="article-bottom" class="sidebar">
+  <?php dynamic_sidebar( 'article-bottom' ); ?>
+</div>
     </div>
   </div>
 </div>

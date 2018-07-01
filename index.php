@@ -30,6 +30,9 @@ echo "$mydate[weekday], $mydate[month] $mydate[mday]";
 
 <div class="row">
   <div class="col-4 r-border c1">
+    <div id="sidebar-primary" class="sidebar">
+      <?php dynamic_sidebar( 'primary' ); ?>
+    </div>
     <?php $query = new WP_Query( 'cat=7' ); ?>
   <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
