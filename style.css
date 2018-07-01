@@ -127,6 +127,10 @@ font-weight: bold;
 color: #5e5e84;
 }
 
+.content a {
+  color: rgb(141, 164, 255);
+}
+
 .c1{
   min-width:320px;
 }
