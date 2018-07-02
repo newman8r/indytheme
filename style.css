@@ -152,7 +152,12 @@ color: #5e5e84;
   font-family: "Crimson"
 }
 
-
+.sidebar ul{
+  list-style-type: none;
+}
+.article-side{
+  margin-top: 175px;
+}
 
 @font-face {
     font-family: EnglishTowne;
