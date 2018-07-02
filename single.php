@@ -21,7 +21,6 @@ while ( have_posts() ) : the_post();
   <div class="title headline">
     <h1><?php the_title() ?></h1>
     <span class="pubdate">Published <?php the_time( 'F jS, Y' ); ?></span>
-    <span class="byline">By <?php the_author_posts_link(); ?></span>
   </div>
   <div class="content">
     <?php the_content() ?>
@@ -34,6 +33,11 @@ endwhile;
 <div id="article-bottom" class="sidebar">
   <?php dynamic_sidebar( 'article-bottom' ); ?>
 </div>
+    </div>
+    <div class="col-3">
+      <div id="article-side" class="sidebar">
+        <?php dynamic_sidebar( 'article-side' ); ?>
+      </div>
     </div>
   </div>
 </div>

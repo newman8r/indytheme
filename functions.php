@@ -20,6 +20,16 @@ function themename_widgets_init() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Side of Article', 'The Indy V1' ),
+        'id'            => 'article-side',
+        'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li></ul>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
 }
 add_action( 'widgets_init', 'themename_widgets_init' );
 
